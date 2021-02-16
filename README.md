@@ -63,7 +63,3 @@ HDFS and Spark are required
 * input must be a .txt file in the form of the example above (or a .txt.gz file).
 * if output dir is not empty, delete everything inside (or change output dir).
 * if output dir does not exist it will automatically created.
-
-### example
-
-	$ spark/bin/spark-submit --class org.spark.LinkPrediction /vagrant/data/ergasia/linkprediction/target/linkprediction-0.1.jar hdfs://localhost:54310/linkprediction/input1 hdfs://localhost:54310/linkprediction/output 100 adamicadar
