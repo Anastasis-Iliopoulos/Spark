@@ -45,6 +45,9 @@ This is a Java Maven project so java and maven is required. All other dependenci
 * Hadoop - Spark
 HDFS and Spark are required
 
+# Usage
+    Usage: <input-dir> <output-dir> <top-k> <method>
+
 # Run
 
 	spark/bin/spark-submit --class org.spark.LinkPrediction pathToTarget/target/linkprediction-0.1.jar hdfs://localhost:54310/pathToInput/inputfile hdfs://localhost:54310/pathToOutput/output k method
@@ -56,7 +59,7 @@ HDFS and Spark are required
 	* adamicadar
 * k:
 	* k>0 for top-k
-	* k==0 to get all new connections sorted
+	* k==0 to get all new connections
 * input must be a .txt file in the form of the example above (or a .txt.gz file).
 * if output dir is not empty, delete everything inside (or change output dir).
 * if output dir does not exist it will automatically created.
